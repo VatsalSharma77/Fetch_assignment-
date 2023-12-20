@@ -1,0 +1,105 @@
+<!-- Instructions
+Task:
+Create an HTML file with input fields to accept a user's name and age.
+Store this data in Local Storage when the user submits the form.
+Create a button to retrieve and display the stored data from Local Storage.
+Style the form and display area using CSS to make it visually appealing.
+You can make use of tables to show the data stored in the local storage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        .parent{
+            margin: auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+        label{
+            display: block;
+            margin: 10px;
+        }
+        #form{
+            max-width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding: 10px;
+        }
+        #btn{
+            font-size: large;
+            border: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+        table{
+           margin-top: 50px;
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            margin-right: 100px;
+        }
+        table > thead > tr > th{
+            padding: 24px;
+    background-color: black;
+    color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    /* border-color: black; */
+    border: 2px solid black;
+        }
+        #gn-btn{font-size: medium;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 50px;
+        }
+        td{
+            padding: 24px;
+    /* background-color: black; */
+    /* color: white; */
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <form id="form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter Your Name ">
+        <label for="age">Age:</label>
+        <input id="age" type="number" placeholder="Enter You age ">
+        <input id="btn" type="submit">
+    </form>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button id="gn-btn">Generate Data</button>
+    </div>
+   </div>
+</body>
+</html><script src="index.js"></script>

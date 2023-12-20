@@ -1,0 +1,49 @@
+<!-- Instructions
+Go to omdbapi.com , create account and explore API documentation.
+
+Create a decent UI where should be able to search for any movie they want. explore how can you make a search request.
+
+Make a fetch request and get the data depending on whatever movie you entered. Show the movie data on the app. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <style>
+h1 {
+  color: #333;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:blue;
+  color:white;
+  border: none;
+}
+
+#movieInfo {
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+    <h1>Movie Search</h1>
+    <input type="text" id="searchInput" placeholder="Enter movie title">
+    <button id="searchButton">Search</button>
+    <div id="movieInfo"></div>
+  
+  <script src="index.js"></script>
+</body>
+</html>

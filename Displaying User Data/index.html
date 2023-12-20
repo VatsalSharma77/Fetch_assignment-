@@ -1,0 +1,56 @@
+<!-- Instructions
+Task:
+Create an HTML file with a button labeled "Fetch Users".
+Upon clicking the button, use the fetch() function to retrieve user data from the Reqres API.
+Display the user data in a visually appealing manner on the webpage.
+Use CSS to style the user information.
+Guidelines:
+Create a JavaScript file index.js to write the logic for fetching and displaying user data.
+Use the Reqres API to fetch user data.
+The displayed information should include at least the user's name, email, and avatar. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying User Data</title>
+    <style>
+        
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#user-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.userCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="user-display"></div>
+    <button id="fetch">Fetch Users</button>
+</body>
+</html>
+<script src="index.js"></script>
